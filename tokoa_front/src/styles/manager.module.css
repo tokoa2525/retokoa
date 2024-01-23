@@ -1,0 +1,204 @@
+/*managerフォルダ内全部*/
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;/*背景画像*/
+  font-family: 'Arial', sans-serif;
+  align-items: center;
+  justify-content: center;
+  color: rgb(70, 70, 70);
+  }
+.title {/*「管理者メニュー」*/
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 0.2em;/*文字周りの余白*/
+  padding-top: 15px;
+  width: 330px;
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+  color: #057433;/*文字色*/
+  border: solid 3px #289168;/*線色*/
+  background-color: rgb(255, 255, 255);
+}
+.button {/*色んな所のボタン*/
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  align-items: center;/*テキストが左右の真ん中に*/
+  justify-content: center;/*テキストが上下の真ん中に*/
+  width: 200px;
+  height: 80px;
+  border-radius: 50px;
+  font-weight: bold;/*字体*/
+  color: #fff;
+  background-color: rgb(126, 243, 122);
+  border: 2px solid rgb(31, 206, 83);
+}
+.button:hover{
+  color: rgb(126, 243, 122);
+  background-color: #e8f5e9;
+}
+.button:active{/*クリック時*/
+  transform: translateY(5px);
+}
+
+/*管理者メニュー*/
+/*@media (min-width: 768px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+}*/
+/*check.js　評価ページ*/
+.title_hyouka {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 0.2em;/*文字周りの余白*/
+  padding-top: 15px;
+  width: 250px;
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+  color: #057433;/*文字色*/
+  border: solid 3px #289168;/*線色*/
+  background-color: rgb(255, 255, 255);
+}
+.image {/*アップロードされた写真関係*/
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border: solid 3px #289168;
+  background-color: rgb(244, 255, 253);
+}
+.buttonGroup {/*はい・いいえの配置*/
+  display: flex;
+  justify-content: space-around;
+}
+.on{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 20px;
+  align-items: center;/*テキストが左右の真ん中に*/
+  justify-content: center;/*テキストが上下の真ん中に*/
+  width: 150px;
+  height: 60px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;/*字体*/
+  color: #fff;
+  background-color: rgb(0, 29, 10);
+  border: 2px solid rgb(0, 29, 10);
+}
+.yes:hover {
+  background-color: #e8f5e9; /* light green */
+}
+  .no:hover {
+  background-color: #ffebee; /* light red */
+}
+
+@media screen and (max-width: 600px){
+}
+
+  /*area.js　地域情報ページ*/
+
+  .title_area{
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2em;/*文字周りの余白*/
+    padding-top: 15px;
+    width: 370px;
+    border-radius: 0.5em;/*角丸*/
+    text-align: center;
+    color: #057433;/*文字色*/
+    border: solid 3px #289168;/*線色*/
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+  .areabtn{/*ボタン全体*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    justify-content: flex-start; 
+    gap: 10px;
+  }
+ .city{/*ボタン単体*/
+    
+  flex: 0 0 calc(50% - 50px);
+    cursor: pointer;
+    padding: 10px 10px;
+    width: 10px; 
+    height: 45px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align:center;
+    color: #fff;
+    background-color: #0db453;
+    margin: 10px;
+    border: none;
+    
+ }
+
+.city:active{/*クリック時*/
+    transform: translateY(5px);
+}
+ 
+  /*---------------area_info------------*/
+
+  .ageGroup{/*プログレスバー関係全体*/
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .gender{/*性別*/
+    width: 400px;
+  }
+  .count{/*アップロード数*/
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(38, 135, 70);
+    padding: 2rem;
+    background-color: #fff;
+  }
+  .progress_success{/*分別成功率*/
+    margin-bottom: 40px;
+    width: 400px;
+  }
+
+  @media screen and (max-width: 600px){
+    .container {
+      width: 100%;
+      }
+
+      .title_area{
+        width: 355px;
+      }
+
+      .ageGroup{/*プログレスバー関係全体*/
+        width: 350px;
+        margin-bottom: 20px;
+      }
+      
+      .gender{/*性別*/
+        width: 350px;
+      }
+      .count{/*アップロード数*/
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: 2px solid rgb(38, 135, 70);
+        padding: 2rem;
+        background-color: #fff;
+      }
+      .progress_success{/*分別成功率*/
+        margin-bottom: 40px;
+        width: 350px;
+      }
+  }
+  

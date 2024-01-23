@@ -1,0 +1,61 @@
+/*info.js　お知らせページ*/
+.Container_info {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    line-height: 2;
+    color: rgb(70, 70, 70);
+  }
+  .title{/*「お知らせ一覧」の文字関連*/
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.2em;/*文字周りの余白*/
+    padding-top: 15px;
+    width: 300px;
+    border-radius: 0.5em;/*角丸*/
+    text-align: center;
+    color: #057433;/*文字色*/
+    border: solid 3px #289168;/*線色*/
+    background-color: rgb(255, 255, 255);
+  }
+  .card {/*要素一列の全体*/
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 20px;
+    padding: 10px 0px 0px 10px;
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid rgb(190, 190, 190);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .Image {/*写真*/ 
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; /* 画像の比率を保持しつつ、枠に合わせて表示 */
+    margin-right: 10px; /* カード内での余白調整 */
+    margin-bottom: 10px;
+  }
+  .cardContent {/*文字のところ*/
+    flex-grow: 1;
+    margin-bottom: -10px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .nation{/*ページネーション*/
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    }
+    .text{
+      font-size: 20px;
+      padding-left: 10px;
+    }
+@media (max-width: 768px) {
+  .card {/*要素一列の全体*/
+    width: 390px;
+  }
+}

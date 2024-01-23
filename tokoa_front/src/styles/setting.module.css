@@ -1,0 +1,84 @@
+/*setting.js用*/
+
+.container_setting {/*設定画面全般*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;/*背景画像*/
+  font-family: 'Arial', sans-serif;
+  align-items: center;
+  color: rgb(70, 70, 70);
+}
+.title{/*「設定」の文字関連*/
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;/*文字周りの余白*/
+  padding-top: 10px;
+  width: 130px;
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+  color: #057433;/*文字色*/
+  border: solid 3px #289168;/*線色*/
+  background-color: rgb(255, 255, 255);
+}
+.main{
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 6px;
+  border:1px solid #e9e4e4;
+  background-color: rgba(255, 255, 255, 0.76);
+  box-shadow: 0px 0px 3px 3px rgb(212, 212, 212);
+}
+.age{/*性別欄関係*/
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.region{/*地域欄関係*/
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+}
+
+
+  
+.toroku{/*ログインボタン*/
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  width: 140px; 
+  height: 55px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  color: #fff;
+  background-color: #333;
+}
+.toroku:hover {/*ホバー時*/
+  background-color: #555;
+} 
+.toroku:active{/*クリックしたとき*/
+  transform: translateY(5px);
+}
+
+@media screen and (max-width: 600px){
+  .main{
+    border:1px solid #e9e4e4;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .option select{/**/
+
+    font-size: 20px; /* フォントサイズの調整 */
+    width: auto; /* コンテナの幅に合わせて自動調整 */
+    height: auto;
+    size: "1";
+    
+  }
+}

@@ -1,0 +1,136 @@
+/*profile.js用*/
+
+.container_pro {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: rgb(70, 70, 70);
+}
+.title{/*「マイページ」の文字関連*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.2em;/*文字周りの余白*/
+  padding-top: 15px;
+  width: 250px;
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+  color: #057433;/*文字色*/
+  border: solid 3px #289168;/*線色*/
+  background-color: rgb(255, 255, 255);
+}
+.userInfo {/*ユーザ名、誕生日の枠組み関連*/
+    padding: 25px 10px 10px 10px;
+    border-radius: 5px;
+    font-weight: 900;
+    border: 3px  solid  #ccc;
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 480px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Comic Sans MS';
+}
+.points {/*ポイントと達成率の全体*/
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.main{
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 6px;
+  border:1px solid #e9e4e4;
+  background-color: rgba(255, 255, 255, 0.76);
+  box-shadow: 0px 0px 3px 3px rgb(212, 212, 212);
+}
+.msk {/*マスコット写真*/
+  width: 150px;  
+  height: 150px;
+  background: url("../../msk^^.png") no-repeat left center;
+  background-size: contain;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  }
+.pointValue {/*ポイント*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  background: #fdfdff;
+  border: 8px double rgb(116, 240, 153);
+  font-size: 25px;
+  font-family: 'Comic Sans MS';
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+.buttons {/*下部機能のボタン全体*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn {/*下部機能のボタンそれぞれ*/
+  display: flex;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  align-items: center;/*テキストが左右の真ん中に*/
+  justify-content: center;/*テキストが上下の真ん中に*/
+  width: 200px;
+  height: 80px;
+  border-radius: 5px;
+  font-weight: bold;/*字体*/
+  color: #fff;
+  background-color: rgb(126, 243, 122);
+  border: 2px solid rgb(31, 206, 83);
+}
+.btn:hover {
+  color: rgb(126, 243, 122);
+  background-color: #e8f5e9;
+}
+.btn:active{/*クリック時*/
+    transform: translateY(5px);
+}
+
+@media (max-width: 768px) {
+  .container_pro {
+    width: 100%;
+  }
+  .title{/*「マイページ」の文字関連*/
+    width: 230px;
+    font-size: 20px;
+  }
+  .userInfo {/*ユーザ名、誕生日の枠組み関連*/
+    width: 300px;
+    padding: 25px 5px 5px 5px;
+    font-size: 15px;
+}
+  .main{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .msk {/*マスコット写真*/
+    width: 130px;  
+    height: 130px;
+    margin-right: 5px;
+    }
+  .pointValue {/*ポイント*/
+    width: 130px;
+    height: 130px;
+    margin-left: 0px;
+  }
+}
+  
+

@@ -1,0 +1,145 @@
+/*contact.js お問合せページ*/
+.container_contact {/*設定画面全般*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;/*背景画像*/
+  font-family: 'Arial', sans-serif;
+  align-items: center;
+  color: rgb(70, 70, 70);
+}
+.title{/*「お問い合わせ」の文字関連*/
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  width: 300px;
+  border-radius: 0.5em;/*角丸*/
+  color: #057433;/*文字色*/
+  border: solid 3px #289168;/*線色*/
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+.main{/*枠内全部*/
+  padding: 20px;
+  border-radius: 6px;
+  border:1px solid #e9e4e4;
+  background-color: rgba(255, 255, 255, 0.76);
+  box-shadow: 0px 0px 3px 3px rgb(212, 212, 212);
+}
+.formGroup{/*要素全部*/
+text-align: center;
+}
+.labelStyle{/*inputの上のテキスト*/
+font-size: 20px;
+text-align: left;
+margin-top: 20px;
+}
+.name{/*名前欄*/
+  margin-top: 10px;
+  width: 250px; 
+  font-size: 20px;
+  border:1px solid #313131;
+}
+.num{/*電話番号*/
+  margin-top: 10px;
+  width:  250px;
+  font-size: 20px;
+  border:1px solid #313131;
+}
+.address{/*メアド*/
+  margin-top: 10px;
+  width:  250px;
+  font-size: 20px;
+  border:1px solid #313131;
+}
+.contact{/*内容*/
+  resize: vertical;
+  margin-top: 10px;
+  width:  250px;
+  height: 150px;
+  min-height: 100px;
+  max-width: 300px;
+  max-height: 250px;
+  font-size: 20px;
+  border:1px solid #313131;
+} 
+.sosin{/*送信ボタン*/
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  width: 140px; 
+  height: 55px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  background-color: #333;
+}
+.sosin:hover {/*ホバー時*/
+  background-color: #555;
+} 
+.sosin:active{/*クリックしたとき*/
+  transform: translateY(5px);
+}
+.alert{/*下の注意書き*/
+margin-bottom: 20px;
+padding: 15px;
+border: 2px solid rgb(17, 100, 100);
+text-align: center;
+font-size: 15px;
+}
+.error{
+  font-weight: bold;
+}
+
+/*contact_fin　送信完了ページ*/
+.title_contact_fin{/*「送信が完了しました」の文字関連*/
+margin-bottom: 20px;
+padding-top: 15px;
+padding-left: 10px;
+padding-right: 10px;
+width: 200px;
+border-radius: 0.5em;/*角丸*/
+text-align: center;
+color: #057433;/*文字色*/
+border: solid 3px #289168;/*線色*/
+background-color: rgb(255, 255, 255);
+}
+.fin{/*完了しましたテキスト*/
+margin-bottom: 40px;
+margin-top: 40px;
+font-size: 1.25rem;
+text-align: center;
+}
+.btn{
+display: block;
+cursor: pointer;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+padding: 15px 20px;
+width: 140px; 
+height: 55px;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+color: #fff;
+background-color: #333;
+}
+.home:hover {/*ホバー時*/
+background-color: #555;
+}
+.home:active{/*クリック時*/
+transform: translateY(5px);
+}
+
+@media screen and (max-width: 600px){
+  .main{
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid #e9e4e4;
+  }
+  .alert{/*下の注意書き*/
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,236 @@
+/*shop.js・product_details.js・exchangr.js用*/
+
+.container_shop {/*ボディ画面全体*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: rgb(70, 70, 70);
+}
+.title{/*「ショップ」の文字関連*/ 
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 3px;/*文字周りの余白*/
+padding-top: 10px;
+width: 200px;
+border-radius: 0.5em;/*角丸*/
+text-align: center;
+color: #057433;/*文字色*/
+border: solid 3px #289168;/*線色*/
+background-color: rgb(255, 255, 255);
+}
+
+.search{/*検索バー*/
+display: flex;
+justify-content: center; /* 横軸で中央に配置 */
+margin-top:50px; /* 上部の余白を調整 */
+margin-bottom: 50px; /* 下部の余白を調整 */
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.productdetail{/*商品要素一つの全体*/
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+
+.nation{/*ページネーション*/
+display: flex;
+justify-content: center;
+margin: 0 auto;
+}
+
+/*GPT*/
+
+.product_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 左揃えで要素を配置 */
+  margin-bottom: 20px;
+  margin-top: 20px;
+  gap: 20px;
+  
+}
+
+.productdetail {
+  flex: 0 1 calc(35% - 20px); /* 要素をフレックスコンテナの50%の幅にする */
+  /* flex-basis を calc(50% - 20px) にすることで、gapのスペースを考慮します */
+  margin-bottom: 20px; /* 下にスペースを作る */
+  
+}
+
+/* 画像や商品名などのスタイルをここに追加 */
+.product {
+  cursor: pointer;
+  padding: 40px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.image {
+  margin: -30px;
+  width: 150px;
+  height: 150px;
+  background-color: #eaeaea;
+  background-size: cover;
+  background-position: center;
+}
+
+.name {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;/*改行させない*/
+  /* その他のスタイル */
+}
+
+/* もし2列が画面サイズによって1列になることを望むなら、以下のメディアクエリを使用 */
+@media (max-width: 768px) {
+  .name {
+    white-space: nowrap;
+    font-size: 18px;
+  }
+  
+  .image {
+    margin: -30px;
+    width: 130px;
+    height: 130px;
+    background-color: #eaeaea;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
+
+/*-----------------商品詳細関係-------------*/
+
+.title_detail{/*「商品A」とかの文字関連*/
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+padding: 3px;/*文字周りの余白*/
+padding-top: 10px;
+width: 100%;/*商品名によって変動*/
+border-radius: 0.5em;/*角丸*/
+text-align: center;
+color: #057433;/*文字色*/
+border: solid 3px #289168;/*線色*/
+background-color: rgb(255, 255, 255);
+
+}
+.card {/*要素全体*/
+  padding: 45px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.imagePlaceholder {/*写真関係*/
+  display: flex;
+  margin-bottom: 20px;
+  width: 260px;
+  height: 260px;
+  background-color: #eaeaea;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.details {/*テキスト関係*/
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cardin{/*商品説明欄*/
+  min-height: 120px;
+  padding-bottom: 80px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.use{/*交換するボタン*/
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  width: 140px; 
+  height: 45px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align:center;
+
+  color: #fff;
+  background-color: #333;
+  margin-top: 20px;
+}
+
+.error{
+  margin-top: 20px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+/*-----------------商品交換関係-------------*/
+
+.title_ex{/*「交換完了」とかの文字関連*/
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3px;/*文字周りの余白*/
+  padding-top: 10px;
+  width: 200px;
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+  color: #057433;/*文字色*/
+  border: solid 3px #289168;/*線色*/
+  background-color: rgb(255, 255, 255);
+}
+.setumei{/*普通の文章*/
+color:  #057463;
+font-size: 25px;
+margin-left: 30px;
+}
+
+.msk {/*お辞儀してるマスコット*/
+background: url("../../msk_ojg.png") no-repeat  center;
+background-size: contain;
+height: 200px;
+width: 200px;
+margin-left: 70px;
+}
+
+.actionButtons{
+text-align: center;
+margin-left: 65px;
+}
+
+.button {
+display: flex;
+flex-direction: column;
+cursor: pointer;
+margin-top: 10px;
+margin-bottom: 30px;
+align-items: center;/*テキストが左右の真ん中に*/
+justify-content: center;/*テキストが上下の真ん中に*/
+width: 200px;
+height: 80px;
+border-radius: 50px;
+font-weight: bold;/*字体*/
+color: #fff;
+background-color: rgb(126, 243, 122);
+border: 2px solid rgb(31, 206, 83);
+}
+.button:hover{
+color: rgb(126, 243, 122);
+background-color: #e8f5e9;
+}
+.button:active{/*クリック時*/
+transform: translateY(5px);
+}

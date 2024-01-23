@@ -1,0 +1,155 @@
+/*upload.js・upload_fin用*/
+
+.container_upload {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  
+  color: rgb(70, 70, 70);
+}
+.title{/*「アップロード」の文字関連*/
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 300px;
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+
+  
+  color: #057433;/*文字色*/
+  border: solid 3px #057463;/*線色*/
+  background-color: rgb(255, 255, 255);
+}
+
+.setumei{/*普通の文章*/
+color:  #057463;
+text-align: center;
+font-size: 20px;
+}
+
+.inputGroup{/*画像選択するところ*/
+ 
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.previewImage {/*ファイル選択*/
+display: flex;
+margin-top: 20px;
+margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
+max-width: 400px;
+max-height: 400px;
+}
+.dropdown {/*ドロップダウン*/
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+margin-bottom: 100px;
+padding: 10px;
+text-align: center;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.message{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.gaid{/*ガイドライン*/
+padding: 1rem;
+border: solid 2px #289168;/*線色*/
+background-color: rgba(255, 255, 255, 0.767);
+text-align: center;
+padding-top: 20px;
+font-size: 18px;
+}
+
+.aprbtn {/*アップロードボタン*/
+  display: block;
+  
+background-color: rgb(0, 0, 0);
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+align-items: center;
+margin: 0 auto;
+margin-top: 30px;
+margin-bottom: 50px;
+
+}
+.aprbtn:active{/*クリックしたとき*/
+transform: translateY(5px);
+}
+
+.error{
+  color: red;
+  text-align: center;
+}
+
+@media (max-width: 767px) { 
+  .previewImage {/*ファイル選択*/
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    max-height: 350px;
+    }
+
+ }
+
+/*----------------------アップロード完了画面------------------------*/
+.title_fin{
+margin-bottom: 20px;
+margin-left: -15px;
+padding-top: 15px;
+padding-left: 10px;
+padding-right: 10px;
+width: 110%;
+border-radius: 0.5em;/*角丸*/
+text-align: center;
+color: #057433;/*文字色*/
+border: solid 3px #289168;/*線色*/
+background-color: rgb(255, 255, 255);
+
+}
+
+.button {/*upload_finのボタン*/
+display: flex;
+flex-direction: column;
+cursor: pointer;
+margin-top: 10px;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
+align-items: center;/*テキストが左右の真ん中に*/
+justify-content: center;/*テキストが上下の真ん中に*/
+width: 200px;
+height: 80px;
+border-radius: 50px;
+font-weight: bold;/*字体*/
+color: #fff; 
+background-color: rgb(126, 243, 122);
+border: 2px solid rgb(31, 206, 83);
+}
+.button:hover{
+color: rgb(126, 243, 122);
+background-color: #e8f5e9;
+}
+.button:active{/*クリック時*/
+transform: translateY(5px);
+}

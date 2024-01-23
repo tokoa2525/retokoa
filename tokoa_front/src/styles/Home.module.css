@@ -1,0 +1,73 @@
+/*index.js　ホームページ*/
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  max-width: 100%;
+}
+.catchphrase {/*キャッチフレーズ*/
+  text-align: center;
+  color:  #057463;
+  font-size: 28px;
+}
+.oval {/*アップロードボタン*/
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 2rem 2rem;  
+	text-align: center;
+	width: 230px;
+  border-radius: 100vh;/*楕円細長*/
+  transition: 0.05s;
+  font-size: 25px;
+  font-weight: bold;/*字体*/
+  background-color: rgb(31, 206, 83);
+	text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.44), 1px 1px 1px #4a0a11;
+  border-bottom: 7px solid #299243;
+}
+.oval:active{/*クリックしたとき*/
+  transform: translateY(5px);
+}
+.circles {/*サブ機能の全体*/
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.circle {/*サブ機能ボタンそれぞれ*/
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-weight: bold;/*字体*/
+  color: #fff;
+  background-color: rgb(126, 243, 122);
+  border: 2px solid rgb(31, 206, 83);
+}
+.circle:hover {
+  color: rgb(126, 243, 122);
+  background: rgba(234, 255, 227, 0.74);
+}
+.circle:active{/*クリックしたとき*/
+  transform: translateY(5px);
+}
+.ittan{/*管理者ページに飛ぶ仮のボタン*/
+  background-color: aquamarine;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  color: black;
+  padding: 5px;
+  border: 2px solid rgb(31, 206, 83);
+}
+
+@media screen and (max-width: 600px){
+  .catchphrase{
+    font-size: 26px;
+  }
+}

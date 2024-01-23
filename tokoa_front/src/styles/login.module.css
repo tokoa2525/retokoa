@@ -1,0 +1,116 @@
+/*login.js・loguot.js・logout_fin.js*/
+
+.container_login {/*ボディ画面全体*/    
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  line-height: 2;/*行間*/  
+  color: rgb(70, 70, 70);
+}
+.title{/*「新規登録」の文字関連*/
+  margin-bottom: 20px;
+  margin-left: 55px;
+  padding: 0.2em;/*文字周りの余白*/
+  padding-top: 15px;
+  width: 200px;
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #057433;/*文字色*/
+  border: solid 3px #289168;/*線色*/
+  background-color: rgb(255, 255, 255);
+}
+.error {
+  color: red;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.label {/*記入欄の上の文字（ユーザ名、パスワード）*/
+  margin: 10px 0;
+}
+.label input {/*記入欄（ユーザ名、パスワード）*/
+  width: 300px;  
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.hiyoko{/*はじめての方はこちらの文字*/
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.log{/*ログイン/アウトのボタン*/
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  width: 140px; 
+  height: 55px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  background-color: #333;
+}
+.log:hover {/*ホバー時*/
+  background-color: #555;
+}
+.log:active{/*クリック時*/
+  transform: translateY(5px);
+}
+.new{/*新規登録ボタン*/
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  width: 140px; 
+  height: 55px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  background-color: #333;
+}
+.new:hover {/*ホバー時*/
+  background-color: #555;
+}
+.new:active{/*クリック時*/
+  transform: translateY(5px);
+}
+
+/*logout.js　ログアウトページ*/
+.title_logout{/*「ログアウト」の文字関連*/
+  margin-bottom: 20px;
+  padding: 0.2em;/*文字周りの余白*/
+  padding-top: 15px;
+  width: 250px;
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+  color: #057433;/*文字色*/
+  border: solid 3px #289168;/*線色*/
+  background-color: rgb(255, 255, 255);
+}
+.logout{/*ログアウトしますか？テキスト*/
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/*logout_fin　ログアウト完了*/
+.title_logout_fin{/*「ログアウトが完了しました」の文字関連*/
+  margin-bottom: 20px;
+  padding: 0.2em;/*文字周りの余白*/
+  padding-top: 15px;
+  width: 330px;
+  border-radius: 0.5em;/*角丸*/
+  text-align: center;
+  color: #057433;/*文字色*/
+  border: solid 3px #289168;/*線色*/
+  background-color: rgb(255, 255, 255);
+}
