@@ -6,7 +6,7 @@ import { AuthContext } from '../contexts/auth'; // AuthContextをインポート
 const withAuthProtection = (WrappedComponent) => {
 
   // 返される関数コンポーネント
-  return (props) => {
+  const WithAuthProtection = (props) => {
     const router = useRouter(); // useRouterフックを使用
     const { user } = useContext(AuthContext); // AuthContextからユーザー情報を取得
 
@@ -23,6 +23,16 @@ const withAuthProtection = (WrappedComponent) => {
     // ユーザーが認証されている場合のみ、ラップされたコンポーネントをレンダリング
     return user ? <WrappedComponent {...props} /> : null;
   };
+
+  // displayNameを追加
+  WithAuthProtection.displayName = `withAuthProtection(${getDisplayName(WrappedComponent)})`;
+
+  return WithAuthProtection;
 };
 
-export default withAuthProtection; // 高階コンポーネントをエクスポート
+// 高階コンポーネントを使用している場合、この関数が役立つかもしれません
+function getDisplayName(WrappedComponent) {
+  return WrappedComponent.displayName || WrappedComponent.name || 'Component';
+}
+
+export default withAuthProtection;
